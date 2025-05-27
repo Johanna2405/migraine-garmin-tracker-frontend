@@ -1,12 +1,54 @@
-# React + Vite
+# 🧠 Migraine / Garmin Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application to track migraines and correlate them with personal health metrics like heart rate, stress level, and sleep quality — using manually uploaded data from a Garmin device.
 
-Currently, two official plugins are available:
+This project is designed for private use and learning purposes, with a strong focus on data visualization and identifying potential patterns or triggers for migraine attacks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Upload and process exported Garmin data (JSON format)
+- Track and log migraine attacks manually
+- Visualize health metrics (heart rate, stress, sleep) over time
+- Overlay migraine incidents on health data charts
+- Identify correlations between health patterns and migraine events
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- **React** – Component-based UI
+- **Tailwind CSS** – Utility-first styling
+- **Recharts** or **Chart.js** – For interactive data visualization
+
+### Backend
+
+- **Node.js** + **Express.js** – REST API for file upload and data processing
+- **MongoDB** + **Mongoose** – Flexible NoSQL database for storing health and migraine data
+- **Multer** – Middleware for handling file uploads
+
+---
+
+## 🚧 Status
+
+This is a work-in-progress personal project to explore health-related data handling, analysis, and UI design. More features and polish will be added incrementally.
+
+---
+
+## 📌 Disclaimer
+
+This app is not a medical product and is intended for **personal use and educational purposes only**.
+
+---
+
+### 📈 Vision & Future Plans
+
+- Automated data integration (e.g. cloud storage, Garmin sync in future)
+- User authentication and multi-user support
+- Interactive analytics dashboard with filters and insights
+- Export and sharing features (PDF, CSV)
+- Mobile support for migraine logging on the go
+- ML-based trigger suggestion (experimental)
